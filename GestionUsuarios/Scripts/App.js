@@ -23,8 +23,7 @@ function buscarUsuario() {
         $.each(res.m_value.ResultTables[0].ResultRows,
             function (i, data) {
 
-                html += "<li>" + data.AccountName + " " +
-                    data.apodo + "</li>";
+                html += "<li>" + data.AccountName + "</li>";
             });
         html += "</ul>";
         $("#res").html(html);
