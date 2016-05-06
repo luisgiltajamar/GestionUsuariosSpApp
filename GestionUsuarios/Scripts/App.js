@@ -5,7 +5,7 @@ function buscarUsuario() {
     var txt = $("#txtNom").val();
     var criterio = "AccountName:" + txt;
     var query = new Microsoft.SharePoint.Client.
-                        Search.Query.KeywordQuery(context);
+                         Search.Query.KeywordQuery(context);
     query.set_queryText(criterio);
     query.set_sourceId("B09A7990-05EA-4AF9-81EF-EDFAB16C4E31");
     var executor = new Microsoft.SharePoint.Client.Search.
